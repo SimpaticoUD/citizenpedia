@@ -2,12 +2,12 @@
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Cambiar navegación</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">CitizenPedia</a>
+      <a href="/" class="navbar-brand">Preguntas y Respuestas</a>
     </div>
     <div collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
@@ -27,11 +27,11 @@
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li ng-hide="nav.isLoggedIn()" ui-sref-active="active"><a ui-sref="signup">Sign up</a></li>
-        <li ng-hide="nav.isLoggedIn()" ui-sref-active="active"><a ui-sref="login">Login</a></li>
-        <li ng-show="nav.isLoggedIn()"><p class="navbar-text">Hello {{ nav.getCurrentUser().name }}</p> </li>
+        <li ng-hide="nav.isLoggedIn()" ui-sref-active="active"><a ui-sref="signup">Registrarse</a></li>
+        <li ng-hide="nav.isLoggedIn()" ui-sref-active="active"><a ui-sref="login">Entrar</a></li>
+        <li ng-show="nav.isLoggedIn()"><p class="navbar-text">Hola {{ nav.getCurrentUser().name }}</p> </li>
         <li ng-show="nav.isLoggedIn()" ui-sref-active="active"><a ui-sref="settings"><span class="glyphicon glyphicon-cog"></span></a></li>
-        <li ng-show="nav.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
+        <li ng-show="nav.isLoggedIn()"><a ui-sref="logout">Salir</a></li>
       </ul>
     </div>
   </div>

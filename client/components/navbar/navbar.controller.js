@@ -10,17 +10,17 @@ class NavbarController {
   constructor(Auth, $state) {
     this.menu = [
       {
-        'title': 'All',
+        'title': 'Todas',
         'link': function(){return '/';},
         'show': function(){return true;},
       },
       {
-        'title': 'Mine',
+        'title': 'Mías',
         'link': function(){return '/users/' + Auth.getCurrentUser()._id;},
         'show': Auth.isLoggedIn,
       },
       {
-        'title': 'Starred',
+        'title': 'Con estrella',
         'link': function(){return '/users/' + Auth.getCurrentUser()._id + '/starred';},
         'show': Auth.isLoggedIn,
       },
